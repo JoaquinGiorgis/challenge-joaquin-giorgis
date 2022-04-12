@@ -1,0 +1,53 @@
+@import '../../scss/mixins';
+
+.sectionNews {
+
+    &__title {
+        font-family: 'HelveticaNeueRegular';
+        margin-left: 1vw;
+        margin-top: 2vh;
+    }
+
+    &__stats {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 2vh;
+        margin-top: 2vh;
+
+        &--date,
+        &--views,
+        &--category {
+            display: flex;
+
+            p {
+                font-family: 'HelveticaNeueRegular';
+                padding-left: 10px;
+                text-transform: capitalize;
+            }
+        }
+    }
+
+    &__cover {
+        display: flex;
+        justify-content: center;
+
+        &--img {
+            min-width: 80%;
+            max-width: 80vw;
+        }
+    }
+
+    &__subtitle {
+        font-family: 'HelveticaNeueRegular';
+        font-size: 25px;
+        margin: 2vh 1vw 1vw 1vw
+    }
+
+    &__body {
+        @include textBody;
+        margin-left: 1vw;
+        margin-bottom: 1vh;
+        margin-right: 1vw;
+
+    }
+}

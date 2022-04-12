@@ -1,0 +1,39 @@
+@import './variables';
+
+@mixin titleThumbnail {
+    font-family: 'HelveticaNeueRegular';
+    color: $my-white;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+@mixin titleChannel {
+    font-family: 'HelveticaNeueBold';
+    color: $my-white;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+@mixin titleCategory {
+    font-family: 'HelveticaNeueBold';
+    color: $my-purple;
+    font-size: 12px;
+}
+@mixin textBody {
+    font-family: 'HelveticaNeueRegular';
+    color: $my-black;
+    font-size: 14px;
+}
+
+@mixin textBodyBold {
+    font-family: 'HelveticaNeueBold';
+    color: $my-black;
+    font-size: 14px;
+}
+
+
+@mixin description {
+    font-family: 'HelveticaNeueRegular';
+    color: $my-black;
+    font-size: 12px;
+}

@@ -1,0 +1,60 @@
+@import '../../scss/variables';
+@import '../../scss/mixins';
+
+.category {
+    display: flex;
+    justify-content: center;
+
+    &__box {
+
+        &--data {
+            display: flex;
+            flex-direction: column;
+            justify-content: baseline;
+
+            &--title {
+                h1 {
+                    font-family: 'HelveticaNeueRegular';
+                    font-size: 35px;
+                    margin-top: 2vh;
+                    margin-left: 1vw;
+                }
+            }
+
+            &--card {
+                width: 80vw;
+                margin-top: 2vh;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                &--info {
+                    margin-left: 1vw;
+                    margin-bottom: 2vh;
+                    padding-bottom: 1vh;
+                    -webkit-box-shadow: 10px 10px 5px -5px rgba(0, 0, 0, 0.200);
+                    -moz-box-shadow: 10px 10px 5px -5px rgba(0, 0, 0, 0.0200);
+                    box-shadow: 10px 10px 5px -5px rgba(0, 0, 0, 0.200);
+                    border-radius: 10px 10px 10px 10px;
+                    -moz-border-radius: 10px 10px 10px 10px;
+                    -webkit-border-radius: 10px 10px 10px 10px;
+                    border: 1px solid #0000002b;
+
+                    img {
+                        border-radius: 10px 10px 0px 0px;
+                        -moz-border-radius: 10px 10px 0px 0px;
+                        -webkit-border-radius: 10px 10px 0px 0px;
+                    }
+
+                    h2 {
+                        margin-left: 10px;
+                        @include titleCategory;
+                        text-transform: capitalize;
+                    }
+
+                }
+            }
+        }
+    }
+
+}

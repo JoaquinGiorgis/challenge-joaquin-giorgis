@@ -1,0 +1,76 @@
+@import '../../scss/variables';
+@import '../../scss/mixins';
+
+.header {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    height: 7vh;
+    width: 100%;
+    background-color: $my-purple;
+
+    &__title {
+        display: flex;
+        align-items: center;
+        margin-left: 1vw;
+
+        &--icon {
+            color: white;
+            font-size: 35px;
+            margin-right: 10px;
+        }
+
+        p {
+            @include titleChannel;
+        }
+    }
+
+    &__links {
+        display: flex;
+
+        p {
+            font-family: "HelveticaNeueRegular";
+            margin-left: 2vw;
+            font-size: 20px;
+            cursor: pointer
+        }
+
+        p:hover {
+            font-weight: bold;
+        }
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .header {
+        height: 8vh;
+        display: flex;
+        justify-content: space-between;
+
+        &__title {
+
+            &--icon {
+                font-size: 30px;
+                margin-right: 5px;
+            }
+
+            p {
+                font-size: 12px;
+            }
+        }
+
+        &__links {
+            display: flex;
+            flex-direction: column;
+            margin-right: 2vw;
+
+            p {
+                font-size: 12px;
+                margin-bottom: 0.5vh;
+                cursor: pointer
+            }
+        }
+    }
+}

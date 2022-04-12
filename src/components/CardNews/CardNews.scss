@@ -1,0 +1,90 @@
+@import '../../scss/variables';
+@import '../../scss/mixins';
+
+.cardNews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 5vh;
+
+    &__box {
+        margin-left: 2vw;
+        margin-bottom: 5vh;
+        width: 300px;
+        word-wrap: break-word;
+        padding-bottom: 1vh;
+        -webkit-box-shadow: 0px 0px 32px 13px rgba(0, 0, 0, 0.14);
+        -moz-box-shadow: 0px 0px 32px 13px rgba(0, 0, 0, 0.14);
+        box-shadow: 0px 0px 32px 13px rgba(0, 0, 0, 0.14);
+        border-radius: 10px 10px 10px 10px;
+        -moz-border-radius: 10px 10px 10px 10px;
+        -webkit-border-radius: 10px 10px 10px 10px;
+
+        img {
+            border-radius: 10px 10px 0px 0px;
+            -moz-border-radius: 10px 10px 0px 0px;
+            -webkit-border-radius: 10px 10px 0px 0px;
+        }
+
+        h2 {
+            @include textBodyBold;
+            margin-left: 10px;
+            margin-right: 10px;
+            text-transform: capitalize;
+            height: 7vh;
+        }
+
+        &--stats {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 15px 2vh 15px;
+
+            &--category {
+                display: flex;
+                align-items: center;
+
+                p {
+                    @include textBody;
+                    margin-left: 5px;
+                }
+            }
+
+            &--views {
+                display: flex;
+
+                p {
+                    @include textBody;
+                    margin-left: 5px;
+                }
+            }
+
+        }
+
+        &--footer {
+            display: flex;
+            justify-content: space-between;
+            padding: 1vh 15px 2vh 15px;
+            align-items: center;
+
+            &--date {
+                display: flex;
+
+                p {
+                    @include textBody;
+                    margin-left: 5px;
+                }
+            }
+
+            &--btn {
+                border: 0;
+                background-color: rgba(161, 117, 211);
+                padding: 10px;
+                color: rgba(255, 255, 255);
+                font-family: 'HelveticaNeueBold';
+                cursor: pointer;
+            }
+
+        }
+
+    }
+}

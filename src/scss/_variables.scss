@@ -1,0 +1,19 @@
+//Colors
+$my-purple : rgb(161, 117, 211);
+$my-pink: rgb(230, 82, 138);
+$my-black: rgb(29, 29, 38);
+$my-white: rgb(255, 255, 255);
+
+//Fonts 
+
+@font-face {
+    font-family: 'HelveticaNeueBold';
+    src: url('../assets/fonts/HelveticaNeueMediumExtended.ttf') format('truetype');
+}
+
+;
+
+@font-face {
+    font-family: 'HelveticaNeueRegular';
+    src: url('../assets/fonts/helveticaneue.ttf') format('truetype');
+}
